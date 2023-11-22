@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header navItem1='LOGIN' navItem2='CRIE SUA CONTA' />
       <Section/> 
     </>
   )
