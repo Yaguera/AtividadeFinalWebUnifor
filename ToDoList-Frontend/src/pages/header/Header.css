@@ -1,0 +1,11 @@
+header img {
+    width: 250px;
+}
+
+header ul li {
+    font-size: 16px;
+}
+
+.navbar {
+    text-align: center;
+}
