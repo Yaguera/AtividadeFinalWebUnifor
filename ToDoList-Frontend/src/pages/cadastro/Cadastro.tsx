@@ -3,19 +3,19 @@ export default function Cadastro() {
         'use strict';
     
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation') as NodeListOf<HTMLFormElement>;
+        const forms = document.querySelectorAll('.needs-validation') as NodeListOf<HTMLFormElement>;//Convertido para NodeListOf<HTMLFormElement> para informar ao TypeScript que os elementos são especificamente instâncias de HTMLFormElement.
     
         // Loop over them and prevent submission
         for (let i = 0; i < forms.length; i++) {
             const form = forms[i];
     
             form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
+                if (!form.checkValidity()) { // Isso verifica se o formulário é válido usando o método checkValidity(). Se o formulário não for válido, impede o comportamento padrão de envio do formulário e interrompe a propagação do evento.
                     event.preventDefault();
                     event.stopPropagation();
                 }
     
-                form.classList.add('was-validated');
+                form.classList.add('was-validated'); //: Adiciona a classe 'was-validated' ao formulário. Essa classe é normalmente usada no Bootstrap para aplicar estilos de validação personalizados ao formulário.
             }, false);
         }
     })();
