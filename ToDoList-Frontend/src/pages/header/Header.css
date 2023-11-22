@@ -1,3 +1,9 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
 header img {
     width: 200px;
 }

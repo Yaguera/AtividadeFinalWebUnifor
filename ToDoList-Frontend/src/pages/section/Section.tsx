@@ -1,4 +1,5 @@
 import "./Section.css"
+import { Link } from "react-router-dom"
 
 export default function Section() {
     return (
@@ -9,7 +10,7 @@ export default function Section() {
                         <h1>Desperte Sua Produtividade</h1>
                         <p>Organize-se de maneira intuitiva, defina metas e conquiste seus objetivos diários com facilidade.
                         </p>
-                        <button className="btn btn-danger">Crie sua conta</button>
+                        <Link to="cadastro" className="btn btn-danger">Crie sua conta</Link>
                     </div>
                 </div>
             </div>

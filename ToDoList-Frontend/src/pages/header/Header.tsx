@@ -1,6 +1,7 @@
 import Logo from "../../assets/img/logo.jpg"
 import HeaderElements from "../../components/header_elements/HeaderElements"
 import "./Header.css"
+import { Link } from "react-router-dom"
 interface HeaderProps {
     navItem1: string,
     navItem2: string
@@ -12,9 +13,9 @@ export default function Header({navItem1, navItem2} : HeaderProps) {
         <header>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img src={Logo} alt="logo" />
-                    </a>
+                    </Link>
                     <button className="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">

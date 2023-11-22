@@ -1,6 +1,6 @@
 section {
     display: flex;
-    height: 80vh;
+    height: 91vh;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +21,7 @@ section {
     font-size: 1.3rem;
 }
 
-.container button {
+.container a {
     padding: 8px;
     width: 70%;
     font-size: 24px;
