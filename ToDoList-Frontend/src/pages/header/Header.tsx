@@ -1,4 +1,5 @@
 import Logo from "../../assets/img/logo.jpg"
+import HeaderElements from "../../components/header_elements/HeaderElements"
 import "./Header.css"
 
 export default function Header() {
@@ -16,14 +17,7 @@ export default function Header() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link" id="login" href="">LOGIN</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="btn btn-danger" id="cadastro" href="">CRIE SUA CONTA</a>
-                            </li>
-                        </ul>
+                        <HeaderElements item1="LOGIN" item2="CRIE SUA CONTA"/>
                     </div>
                 </div>
             </nav>
