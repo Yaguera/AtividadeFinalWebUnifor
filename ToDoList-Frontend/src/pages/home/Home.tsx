@@ -5,7 +5,7 @@ import "./Home.css"
 export default function Home() {
     return (
         <>
-            <Header navItem1='LOGIN' navItem2='CRIE SUA CONTA' />
+            <Header navItem1='LOGIN' navItem2='CRIE SUA CONTA' linkItem1="login" linkItem2="cadastro" />
             <Section />
         </>
     )

@@ -4,10 +4,12 @@ import "./Header.css"
 import { Link } from "react-router-dom"
 interface HeaderProps {
     navItem1: string,
-    navItem2: string
+    navItem2: string,
+    linkItem1: string,
+    linkItem2: string
 }
 
-export default function Header({navItem1, navItem2} : HeaderProps) {
+export default function Header({navItem1, navItem2, linkItem1, linkItem2} : HeaderProps) {
 
     return (
         <header>
@@ -22,7 +24,7 @@ export default function Header({navItem1, navItem2} : HeaderProps) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <HeaderElements item1={navItem1} item2={navItem2} />
+                        <HeaderElements item1={navItem1} item2={navItem2} link1={linkItem1} link2={linkItem2} />
                     </div>
                 </div>
             </nav>
