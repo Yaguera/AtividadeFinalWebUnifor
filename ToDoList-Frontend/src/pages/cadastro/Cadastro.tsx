@@ -34,47 +34,16 @@ export default function Cadastro() {
                     <form className="row g-3 needs-validation" noValidate>
                         <div className="col-md-12">
                             <label htmlFor="validationCustom01" className="form-label">
-                                Nome Completo
+                                Nome
                             </label>
                             <input
                                 type="text"
                                 className="form-control"
                                 id="validationCustom01"
-                                placeholder="João da Silva Chavier"
+                                placeholder="Nome"
                                 required
                             />
                             <div className="valid-feedback">Tudo certo!</div>
-                        </div>
-                        <div className="col-md-12">
-                            <label htmlFor="validationCustom02" className="form-label">
-                                Senha
-                            </label>
-                            <input
-                                type="password"
-                                className="form-control"
-                                id="validationCustom02"
-                                placeholder="digite sua senha"
-                                required
-                            />
-                            <div className="valid-feedback">Tudo certo!</div>
-                        </div>
-                        <div className="col-md-12">
-                            <label htmlFor="validationCustomUsername" className="form-label">
-                                Usuário
-                            </label>
-                            <div className="input-group has-validation">
-                                <span className="input-group-text" id="inputGroupPrepend">
-                                    @
-                                </span>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="validationCustomUsername"
-                                    aria-describedby="inputGroupPrepend"
-                                    required
-                                />
-                                <div className="invalid-feedback">Por favor, digite seu usuário.</div>
-                            </div>
                         </div>
                         <div className="col-md-12">
                             <label htmlFor="validationCustom03" className="form-label">
@@ -84,9 +53,23 @@ export default function Cadastro() {
                                 type="email"
                                 className="form-control"
                                 id="validationCustom03"
+                                placeholder="Digite seu e-mail"
                                 required
                             />
                             <div className="invalid-feedback">Por favor, digite um e-mail válido.</div>
+                        </div>
+                        <div className="col-md-12">
+                            <label htmlFor="validationCustom02" className="form-label">
+                                Senha
+                            </label>
+                            <input
+                                type="password"
+                                className="form-control"
+                                id="validationCustom02"
+                                placeholder="Digite sua senha"
+                                required
+                            />
+                            <div className="valid-feedback">Tudo certo!</div>
                         </div>
                         <div className="col-12">
                             <div className="form-check">
